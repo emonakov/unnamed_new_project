@@ -1,0 +1,29 @@
+# available rules:
+#   - stylelint: https://stylelint.io/user-guide/rules/
+#   - stylelint-scss: https://github.com/kristerkari/stylelint-scss
+# example config: https://stylelint.io/user-guide/example-config/
+{
+  "extends": "stylelint-config-standard",
+  "plugins": [
+      "stylelint-scss",
+  ],
+  "rules": {
+    "declaration-no-important": true,
+    "indentation": 4,
+    "number-leading-zero": "always",
+    "string-quotes": "single",
+    "block-no-empty": true,
+    "length-zero-no-unit": true,
+    "unit-case": "lower",
+    "value-keyword-case": "lower",
+    "shorthand-property-no-redundant-values": true,
+    "declaration-block-no-duplicate-properties": true,
+    "declaration-block-no-redundant-longhand-properties": true,
+    "declaration-block-no-shorthand-property-overrides": true,
+    "declaration-block-trailing-semicolon": "always",
+    "selector-max-id": 0,
+    "rule-empty-line-before": "always",
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true,
+  }
+}
