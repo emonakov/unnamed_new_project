@@ -1,0 +1,10 @@
+#grid-main {
+    display: grid;
+}
+
+.main-page-header {
+    &__title {
+        font-size: 1rem;
+        color: #ff11ac;
+    }
+}
