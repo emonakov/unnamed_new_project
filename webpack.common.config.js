@@ -40,7 +40,6 @@ module.exports = {
             },
             {
                 test: constants.CSS_FILES,
-                exclude: constants.NODE_MODULE_FILES,
                 use: extractSass.extract({
                     use: [
                         {
@@ -84,7 +83,7 @@ module.exports = {
                 exclude: constants.NODE_MODULE_FILES,
                 loader: 'url-loader',
                 options: {
-                    name: './images/[hash].[ext]',
+                    name: './assets/images/[hash].[ext]',
                     limit: constants.IMAGE_ENCODE_SIZE_LIMIT,
                 },
             },

@@ -1,17 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import 'normalize.css/normalize.css';
 import './scss/home.scss';
+
+import necklaceImage from '../../assets/images/necklace.png';
 
 const rootEl = document.getElementById('app-entry');
 
 ReactDOM.render(
-    <main className="grid-main">
-        <header className="main-page-header">
-            <div className="main-page-header__title">
-                <h1>Hello world!</h1>
-            </div>
-        </header>
+    <main className="main-page grid-main">
+        <img className="main-page__image main-page__image--necklace" src={necklaceImage}></img>
     </main>,
     rootEl
 );

@@ -10,7 +10,8 @@
     "test": "jest --colors --runInBand --coverage",
     "test:clear_cache": "jest --clearCache",
     "test:watch": "jest --watch --verbose --colors --runInBand",
-    "test:watch:all": "jest --watchAll --colors --runInBand --coverage"
+    "test:watch:all": "jest --watchAll --colors --runInBand --coverage",
+    "start": "node server.js"
   },
   "author": "Eugene Monakov",
   "license": "UNLICENSED",
@@ -37,6 +38,7 @@
     "lodash.findwhere": "^3.1.0",
     "moment": "^2.13.0",
     "moment-timezone": "^0.5.3",
+    "normalize.css": "^8.0.0",
     "promise-polyfill": "6.0.2",
     "prop-types": "^15.6.1",
     "react": "^16.3.0",
@@ -91,6 +93,7 @@
     "jest": "^22.4.3",
     "jsdom": "^11.7.0",
     "node-sass": "^4.5.3",
+    "node-static": "^0.7.10",
     "phantomjs-prebuilt": "^2.1.15",
     "postcss-loader": "^2.0.5",
     "raf": "^3.4.0",

@@ -1,10 +1,60 @@
-#grid-main {
+.grid-main {
     display: grid;
+    grid-template-columns: repeat(4, 2fr [col-start]);
+    grid-template-rows: repeat(4, 2fr [row-start]);
 }
 
-.main-page-header {
-    &__title {
-        font-size: 1rem;
-        color: #ff11ac;
+html {
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-image: url('../../../assets/images/back.png');
+    background-position-y: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    @media (max-width: 700px) {
+        background-position-x: 25%;
+    }
+}
+
+
+#app-entry {
+    position: relative;
+
+    &::before {
+        width: 800px;
+        height: 300px;
+        content: '';
+        background-image: url('../../../assets/images/coffee-table-big.png');
+        background-size: 100%;
+        position: fixed;
+        background-repeat: no-repeat;
+        bottom: -14px;
+        left: 25%;
+        z-index: -1;
+
+        @media (max-width: 700px) {
+            left: 0;
+        }
+    }
+}
+
+.main-page {
+    width: 100vw;
+    height: 100vh;
+
+    &__image {
+
+        &--necklace {
+            max-width: 250px;
+            grid-column: 3;
+            grid-row: 5;
+        }
     }
 }
